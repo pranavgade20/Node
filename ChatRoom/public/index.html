@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <title>ChatRoom!</title>
+   <script type="text/javascript" src="script.js"></script>
+   <link rel="stylesheet" type="text/css" href="style.css">
+   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+	<div id="div1">
+   </div>
+
+   <div class="form-group">
+   <div class="row">
+      <div class="col-sm-10"><input class="form-control input-lg" type="text" id="text1"></div>
+      <div class="col-sm-2"><button class="btn btn-success btn-block" onclick="sendServerRequest()">Send text!</button></div>
+   </div>
+   </div>
+</body>
+<script type="text/javascript">
+   var p1 = document.getElementById('p1');//the para where text is be shown
+   var text1 = document.getElementById("text1");//text box
+
+   text1.addEventListener("keyup", function(event) {
+    //event.preventDefault();
+    if (event.keyCode === 13) sendServerRequest();
+  });
+
+   getServerResponse(); //get the server response first time after loading
+</script>
+</html>
+
+<!-- <div class="container">
+  <img src="/w3images/bandmember.jpg" alt="Avatar">
+  <p>Hello. How are you today?</p>
+  <span class="time-right">11:00</span>
+</div> -->
