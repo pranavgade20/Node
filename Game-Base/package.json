@@ -1,0 +1,22 @@
+{
+  "name": "game",
+  "version": "1.0.0",
+  "description": "A simple(?) game with Nodejs, Express, and p5js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "keywords": [
+    "express"
+  ],
+  "author": "Pranav Gade",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.2"
+  }
+}
