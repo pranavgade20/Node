@@ -7,7 +7,7 @@ app.use(bodyParser.urlencoded({ extended: true })); // support encoded bodies
 app.use(express.static('public')); //expose the public directory
 var handler = require('./requestsHandler'); //a module to handle requests
 
-var port = 8080;
+var port = 8081;
 
 app.get('/', function(req, res) {
    res.sendFile(__dirname + '/public/index.html');

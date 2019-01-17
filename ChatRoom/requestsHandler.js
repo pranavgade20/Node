@@ -59,7 +59,10 @@ function addElement(val) {
    });
    iterator++;
 
-   
+   abcCollection.replaceOne({ }, {
+      _id : 0,
+      text : iterator
+   });
 }
 
 var text = [];
